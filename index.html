@@ -2,42 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="script.js"></script>
-</head>
-<body>
-    <div class="startbutton"><button>Start</button></div>
-
-    <div class="informationbox">
-        <div class="title">
-            <span>Rules</span>
+    </head>
+    <body>
+        <div class="StartButton"><button>Test Your Knowledge</button></div>
+        <div class="RuleTitle"><span>These Are The Rules</span></div>
+        <div class="InformationList">
+            <div class="Info">1. You will only have <span>20 seconds</span> for each question.</div>
+            <div class="Info">2. When you answer a question correctly, another question will be presented to you.</div>
+            <div class="Info">3. When all the questions are answered or timer runs out, the game will be over.</div>
+            <div class="Info">4. You'll get awarded points based on your correct answers.</div>
+            <div class="Info">5. You won't be able to exit the game once you start.</div>
         </div>
-        <div class="information list">
-            <div class="informationlist">
-                <div class="information">1. You will have <span>10 seconds</span> for each question after you click the start button</div>
-                <div class="information">2. When you answer a question correctly, another question will be presented to you</div>
-                <div class="information">3. If you answer the question incorrectly, time will be subtracted</div>
-                <div class="information">4. When all the questions are answered or timer runs out, the game will be over</div>
-                <div class="information">5. After the game is over, you'll be able to save your initials and score</div>
+        <div class="Buttons">
+            <button class="Quit Quiz">Quit the Quiz</button>
+            <button class="Restart Quiz">Continue the Quiz</button>
         </div>
-        <div class="buttons">
-            <button class="quit">Finish Game</button>
-            <button class="restart">Continue Game</button>
-        </div>
-        </div>
-
-        <!--Question Box-->
-        <div class="questionbox">
+        
+        <div class="quizbox">
             <header>
-                <div class="title">Awesome Quiz Application</div>
+                <div class="Title">Awesome Quiz Application</div>
+                <div class="Timer">
+                 <div class="TimeLeft">Time Left</div>
+                 <div class="TimeSec">20</div>
+                </div>
+                <div class="TimeLine"></div>
             </header>
+            <section>
+                <div class="Question">
+                    <!--Insert question from JavaScript-->
+                </div>
+                <div class="Options">
+                    <!--Insert options from JavaScript-->
+                </div>
+            </section>
+
+            <!--footer of Quiz Box---->
+            <footer>
+                <div class="TotalQuestionCount">
+                    <!--Insert Question Count Number from JavaScript-->
+                </div>
+                <button class="NextButton">Next</button>
+            </footer>
         </div>
 
+        <!--Result Box-->
+        <div class="Result">
+        <div class="icon"></div>
+        <i class="fas fa-crown"></i>
+        </div>
+        <div class="Complete">Congratulations! You finished the game!</div>
+        <div class="Score"></div>
+        <!--Score results from JavaScript-->
+    </div>
+</div>
 
-    
-    
-</body>
-</html>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+    </html>
+    </html>
