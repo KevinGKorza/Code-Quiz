@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <div class="StartButton"><button>Test Your Knowledge</button></div>
-        <div class="RuleTitle"><span>These Are The Rules</span></div>
+        <!--Start Button-->
+        <div class="StartButton"><button>Start Quiz</button></div>
+
+        <!--Info Box-->
+        <div class="InformationBox">
+        <div class="InformationTitle"><span>These Are The Rules</span></div>
         <div class="InformationList">
             <div class="Info">1. You will only have <span>20 seconds</span> for each question.</div>
             <div class="Info">2. When you answer a question correctly, another question will be presented to you.</div>
@@ -18,24 +22,26 @@
             <div class="Info">5. You won't be able to exit the game once you start.</div>
         </div>
         <div class="Buttons">
-            <button class="Quit Quiz">Quit the Quiz</button>
-            <button class="Restart Quiz">Continue the Quiz</button>
+            <button class="Quit">Exit the Quiz</button>
+            <button class="Restart">Continue the Quiz</button>
         </div>
-        
+        </div>
+
+        <!--Quiz Box-->
         <div class="quizbox">
             <header>
                 <div class="Title">Awesome Quiz Application</div>
                 <div class="Timer">
-                 <div class="TimeLeft">Time Left</div>
+                 <div class="TimeLeftText">Time Left</div>
                  <div class="TimeSec">20</div>
                 </div>
                 <div class="TimeLine"></div>
             </header>
             <section>
-                <div class="Question">
+                <div class="QuestionText">
                     <!--Insert question from JavaScript-->
                 </div>
-                <div class="Options">
+                <div class="OptionList">
                     <!--Insert options from JavaScript-->
                 </div>
             </section>
@@ -54,36 +60,21 @@
         <div class="icon"></div>
         <i class="fas fa-crown"></i>
         </div>
-        <div class="Complete">Congratulations! You finished the game!</div>
+        <div class="Complete">Congratulations! You finished!</div>
         <div class="Score"></div>
         <!--Score results from JavaScript-->
     </div>
+    <div class="Buttons">
+        <button class="Restart">Restart</button>
+        <button class="Quit">Quit</button>
+    </div>
 </div>
 
+<!-- JS Question file goes here-->
+<script src=""></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Javascript script.js goes here -->
+<script src=""></script>
 
 
 
